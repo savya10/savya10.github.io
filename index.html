@@ -48,6 +48,7 @@
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
+    <a href="#opensource">Open Source Contributions</a>
     <a href="#publications">Publications</a>
     <a href="#talks">Talks</a>
     <a href="#writing">Writing</a>
@@ -67,8 +68,8 @@
       </p>
       <p>
         My thesis, <em>Accelerating materials design of defect-implemented semiconductors with machine learning</em>,
-        centred on investigating structure-property relationships for point defect-implemented materials, using different equivariant charge-aware graph neural networks (preprints available soon!).
-        During my time in Singapore I also helped develop Dis-GEN ( a generative models for disordered crystalline structures) and DFTPilot (an LLM assistant for DFT simulations), and was the main contributor to the largest computational defects database (soon to be published).
+        centres on building structure-property relationships using charge-aware MLIPs for point defect-implemented materials.
+        During my time in Singapore I worked on generative modelling approaches for disordered crystal structures (<a href="https://arxiv.org/abs/2507.18275">Dis-GEN</a>) and predictive materials informatics (<a href="https://github.com/chiku-parida/DFTPilot">DFTPilot</a>). 
         Before that I completed my MSci in Chemistry at <a href="https://www.imperial.ac.uk/">Imperial College London</a>, where I
         built <a href="https://github.com/WMD-group/PyTASER">PyTASER</a> in Aron Walsh's group.
       </p>
@@ -84,14 +85,14 @@
         <li>
           <div class="row"><span class="role">PhD Candidate, Computational Materials Science</span><span class="when">2022 – 2026</span></div>
           <div class="org">UCL × A*STAR Singapore · Scanlon Materials Theory Group</div>
-          <p>Equivariant, charge-aware GNNs for high-throughput defect and dopant screening. Built the pipeline behind the
-            largest public computational defects database (ARCHER2 → MongoDB, 20+ users). Presented at ICLR, MRS and AI4X; helped secure
-            a £2m grant; supervised 3+ PhD students.</p>
+          <p>Charge-aware MLIPs for high-throughput defect and dopant screening (2 preprints incoming October 2026). Built the pipeline behind the
+            largest computational defects database (ARCHER2 → MongoDB, 20+ users). Presented at ICLR, MRS and AI4X; helped secure
+            a £2m grant; co-supervised 3+ PhD students.</p>
         </li>
         <li>
           <div class="row"><span class="role">Undergraduate Researcher</span><span class="when">2021 – 2024</span></div>
           <div class="org">Imperial College London · Materials Design Group (Prof. Aron Walsh)</div>
-          <p>Lead developer of PyTASER, which predicts transient absorption spectra from first principles. Published in JOSS.</p>
+          <p>Lead developer of <a href="https://github.com/WMD-group/PyTASER">PyTASER</a>, which predicts transient absorption spectra from first principles. Published in <a href="https://joss.theoj.org/papers/10.21105/joss.05999">JOSS</a>.</p>
         </li>
         <li>
           <div class="row"><span class="role">MSci Research Student</span><span class="when">2021 – 2022</span></div>
@@ -101,12 +102,12 @@
         <li>
           <div class="row"><span class="role">Undergraduate Researcher</span><span class="when">2021</span></div>
           <div class="org">Imperial College London · Kuimova Group</div>
-          <p>Optical probes for DNA G-quadruplex sensing. Co-authored a paper in <em>Analytical Chemistry</em>.</p>
+          <p>Optical probes for DNA G-quadruplex sensing. Co-authored a paper in <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11672229/">Analytical Chemistry</a>
         </li>
         <li>
           <div class="row"><span class="role">R&amp;D Intern</span><span class="when">2019</span></div>
           <div class="org">Notpla (bioplastics)</div>
-          <p>Manufacturing and extraction methods for biodegradable packaging, adopted into the production workflow.</p>
+          <p>Manufacturing and extraction methods for biodegradable packaging, adopted directly into the production workflow to secure £10m+ seed funding.</p>
         </li>
       </ul>
     </section>
@@ -134,18 +135,32 @@
           <p>High-throughput pipeline that pulls properties from hybrid-DFT runs on ARCHER2 into a cloud-hosted MongoDB defects database. Used by 20+ researchers.</p>
           <p class="tags">HPC · MongoDB · workflows</p>
         </article>
+      </div>
+      <p class="more"><a href="https://github.com/savya10">More on GitHub →</a></p>
+    </section>
+
+    <section id="opensource">
+      <h2>Open Source Contributions</h2>
         <article class="card">
-          <h3>Open-source contributions</h3>
-          <p>
-            <a href="https://github.com/SMTG-Bham/doped">doped</a> (defect calculations) ·
-            <a href="https://github.com/SMTG-Bham/ShakeNBreak">ShakeNBreak</a> (defect structure searching) ·
-            defectivator · mlippr
-          </p>
+          <h3>vasp2db &amp; mlippr</h3>
+          <p>Core contributor. High-throughput pipeline that pulls properties from hybrid-DFT runs on ARCHER2 into a cloud-hosted MongoDB defects database. Used by 20+ researchers.</p>
+          <p class="tags">HPC · MongoDB · workflows</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/SMTG-Bham/doped">doped</a></h3>
+          <p> Workflow for generating defect calculations for first-principles calculations and full downstream property analysis. Added support for competing phase analysis and file parsing.</p>
           <p class="tags">python · defects · materials</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/SMTG-Bham/ShakeNBreak">ShakeNBreak</a></h3>
+          <p> A structure searching workflow for generating distorted defect structures to fully sample potential energy surfaces. Added support for generating cation-vacancy specific trimeric structures.</p>
+          <p class="tags">python · defects · sampling</p>
         </article>
       </div>
       <p class="more"><a href="https://github.com/savya10">More on GitHub →</a></p>
     </section>
+
+
 
     <section id="publications">
       <h2>Publications</h2>
@@ -178,14 +193,12 @@
       <h3 class="sub">Selected talks</h3>
       <ul class="plain">
         <li><span class="when">2026</span> MRS International Conference, Honolulu</li>
-        <li><span class="when">2026</span> Thomas Young Centre Postgraduate Day, King's College London</li>
         <li><span class="when">2025</span> AI4X International Conference, National University of Singapore</li>
         <li><span class="when">2025</span> MRS Spring Meeting, Seattle</li>
         <li><span class="when">2025</span> ICLR AI4Mat Workshop, Singapore (poster)</li>
-        <li><span class="when">2024</span> MCC Workshop on Modelling Point Defects, Lancaster</li>
-        <li><span class="when">2023</span> Materials Chemistry Consortium, Daresbury Laboratory</li>
+        <li><span class="when">2024</span> MCC Workshop on Modelling Point Defects, Lancaster (invited speaker)</li>
       </ul>
-      <h3 class="sub">Awards</h3>
+      <h3 class="sub">Academic awards</h3>
       <ul class="plain">
         <li><span class="when">2025</span> Visionary Award, LLM Hackathon for Materials &amp; Chemistry</li>
         <li><span class="when">2023</span> Best Oral Presentation, RSC Solid State Group Early Careers Meeting</li>
@@ -197,7 +210,7 @@
 
     <section id="writing">
       <h2>Writing</h2>
-      <p>I write on <a href="https://savyaaggarwal.substack.com">Aggarwizzle</a>, my Substack, about research, ML for science, and whatever else I'm thinking about.</p>
+      <p>I write on <a href="https://savyaaggarwal.substack.com">my Substack</a> about ML for materials, scientific discovery, and whatever else I'm learning.</p>
       <p class="more"><a href="https://savyaaggarwal.substack.com">Read on Substack →</a></p>
     </section>
 
