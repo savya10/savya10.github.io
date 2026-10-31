@@ -39,9 +39,12 @@
         <p class="tagline">Machine learning for materials discovery: defects &amp; dopants in semiconductors.</p>
       </div>
     </div>
-    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark theme">
-      <span class="icon-moon" aria-hidden="true">☾</span><span class="icon-sun" aria-hidden="true">☀</span>
-    </button>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="assets/Savyasanchi_Aggarwal_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark theme">
+        <span class="icon-moon" aria-hidden="true">☾</span><span class="icon-sun" aria-hidden="true">☀</span>
+      </button>
+    </div>
   </header>
 
   <nav class="nav" aria-label="Sections">
@@ -83,31 +86,51 @@
       <h2>Experience</h2>
       <ul class="timeline">
         <li>
-          <div class="row"><span class="role">PhD Candidate, Computational Materials Science</span><span class="when">2022 – 2026</span></div>
-          <div class="org">UCL × A*STAR Singapore · Scanlon Materials Theory Group</div>
-          <p>Charge-aware MLIPs for high-throughput defect and dopant screening (2 preprints incoming October 2026). Built the pipeline behind the
+          <details open>
+            <summary>
+              <span class="row"><span class="role">PhD Candidate, Computational Materials Science</span><span class="when">2022 – 2026</span></span>
+              <span class="org">UCL × A*STAR Singapore · Scanlon Materials Theory Group</span>
+            </summary>
+            <p>Charge-aware MLIPs for high-throughput defect and dopant screening (2 preprints incoming October 2026). Built the pipeline behind the
             largest computational defects database (ARCHER2 → MongoDB, 20+ users). Presented at ICLR, MRS and AI4X; helped secure
             a £2m grant; co-supervised 3+ PhD students.</p>
+          </details>
         </li>
         <li>
-          <div class="row"><span class="role">Undergraduate Researcher</span><span class="when">2021 – 2024</span></div>
-          <div class="org">Imperial College London · Materials Design Group (Prof. Aron Walsh)</div>
-          <p>Lead developer of <a href="https://github.com/WMD-group/PyTASER">PyTASER</a>, which predicts transient absorption spectra from first principles. Published in <a href="https://joss.theoj.org/papers/10.21105/joss.05999">JOSS</a>.</p>
+          <details>
+            <summary>
+              <span class="row"><span class="role">Undergraduate Researcher</span><span class="when">2021 – 2024</span></span>
+              <span class="org">Imperial College London · Materials Design Group (Prof. Aron Walsh)</span>
+            </summary>
+            <p>Lead developer of <a href="https://github.com/WMD-group/PyTASER">PyTASER</a>, which predicts transient absorption spectra from first principles. Published in <a href="https://joss.theoj.org/papers/10.21105/joss.05999">JOSS</a>.</p>
+          </details>
         </li>
         <li>
-          <div class="row"><span class="role">MSci Research Student</span><span class="when">2021 – 2022</span></div>
-          <div class="org">Imperial College London · Harrison Computational Materials Group</div>
-          <p>Hybrid-DFT (CRYSTAL17) study of defects in 2D silicon (silicene) for capacitor technology.</p>
+          <details>
+            <summary>
+              <span class="row"><span class="role">MSci Research Student</span><span class="when">2021 – 2022</span></span>
+              <span class="org">Imperial College London · Harrison Computational Materials Group</span>
+            </summary>
+            <p>Hybrid-DFT (CRYSTAL17) study of defects in 2D silicon (silicene) for capacitor technology.</p>
+          </details>
         </li>
         <li>
-          <div class="row"><span class="role">Undergraduate Researcher</span><span class="when">2021</span></div>
-          <div class="org">Imperial College London · Kuimova Group</div>
-          <p>Optical probes for DNA G-quadruplex sensing. Co-authored a paper in <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11672229/">Analytical Chemistry</a></p>
+          <details>
+            <summary>
+              <span class="row"><span class="role">Undergraduate Researcher</span><span class="when">2021</span></span>
+              <span class="org">Imperial College London · Kuimova Group</span>
+            </summary>
+            <p>Optical probes for DNA G-quadruplex sensing. Co-authored a paper in <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11672229/">Analytical Chemistry</a></p>
+          </details>
         </li>
         <li>
-          <div class="row"><span class="role">R&amp;D Intern</span><span class="when">2019</span></div>
-          <div class="org"><a href="https://www.notpla.com/">Notpla</a> (bioplastics)</div>
-          <p>Manufacturing and extraction methods for biodegradable packaging, adopted directly into the production workflow to secure £10m+ seed funding.</p>
+          <details>
+            <summary>
+              <span class="row"><span class="role">R&amp;D Intern</span><span class="when">2019</span></span>
+              <span class="org"><a href="https://www.notpla.com/">Notpla</a> (bioplastics)</span>
+            </summary>
+            <p>Manufacturing and extraction methods for biodegradable packaging, adopted directly into the production workflow to secure £10m+ seed funding.</p>
+          </details>
         </li>
       </ul>
     </section>
@@ -116,7 +139,7 @@
       <h2>Projects</h2>
       <article class="featured">
         <div class="featured-badge">Featured</div>
-        <h3>DefectMLIP</h3>
+        <h3>DefectMLIP <span class="lock" title="Private repository" aria-label="Private repository"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 7V5a4 4 0 1 1 8 0v2h.5A1.5 1.5 0 0 1 14 8.5v5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5v-5A1.5 1.5 0 0 1 3.5 7H4Zm1.5 0h5V5a2.5 2.5 0 0 0-5 0v2Z"/></svg></span></h3>
         <p>Trained charge-aware machine learning interatomic potentials to predict defect energetics and formation energies, using newly-released architectures (QET, MACE-LES, MACE-QEq,...). Assessed on a dataset of over 100k internally calculated materials
           on point defect simulations calculated using hybrid-DFT (HSE06, PBE0) calculations.</p>
         <p>Accelerated traditional first principles workflow by up to 220x, with a maximum dopability error less than 0.23 eV. Tested for 6 different systems with ongoing further tests for high-throughput application. Preparing preprint for release in October 2026.</p>
@@ -163,7 +186,7 @@
     <section id="opensource">
       <h2>Open Source Contributions</h2>
         <article class="card">
-          <h3>vasp2db &amp; mlippr</h3>
+          <h3>vasp2db &amp; mlippr <span class="lock" title="Private repositories" aria-label="Private repositories"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 7V5a4 4 0 1 1 8 0v2h.5A1.5 1.5 0 0 1 14 8.5v5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5v-5A1.5 1.5 0 0 1 3.5 7H4Zm1.5 0h5V5a2.5 2.5 0 0 0-5 0v2Z"/></svg></span></h3>
           <p>Core contributor. High-throughput pipeline that pulls properties from hybrid-DFT runs on ARCHER2 into a cloud-hosted MongoDB defects database. Used by 20+ researchers.</p>
           <p class="tags">HPC · MongoDB · workflows</p>
         </article>
